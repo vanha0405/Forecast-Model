@@ -45,7 +45,7 @@
         autoplot(forecast_arima) +
           ggtitle("SARIMA Forecast for Revenue") +
           xlab("Time") +
-  ylab("Revenue")
+          ylab("Revenue")
 
 # Save forecast to file
-write.csv(data.frame(forecast_arima), "forecast_revenue.csv", row.names = FALSE)
+        write.csv(data.frame(forecast_arima), "forecast_revenue.csv", row.names = FALSE)
