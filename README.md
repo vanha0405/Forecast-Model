@@ -1,10 +1,10 @@
 # Create a time series object
-ts_revenue <- ts(Sales_revenue$REVENUE, start = c(2022, 10), frequency = 12)
+        ts_revenue <- ts(Sales_revenue$REVENUE, start = c(2022, 10), frequency = 12)
 
 # STL Decomposition
-stl_decomposed <- stl(ts_revenue, s.window = "periodic") # Decompose with seasonal adjustment
-print(stl_decomposed)
-plot(stl_decomposed)
+        stl_decomposed <- stl(ts_revenue, s.window = "periodic") # Decompose with seasonal adjustment
+        print(stl_decomposed)
+        plot(stl_decomposed)  
 
 # Install and load necessary libraries
 install.packages("forecast", dependencies = TRUE)
